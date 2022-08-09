@@ -1,14 +1,11 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [svelte()],
   server: {
     proxy: {
       '/api': {
@@ -18,6 +15,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: 'dist/app',
+    outDir: 'express-app/src',
   },
-});
+})
