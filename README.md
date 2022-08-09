@@ -1,7 +1,7 @@
 # Vite Svelte Express Boilerplate
 > Boilerplate with Vite, Svelte and Express.js to easily create your web apps.
 
-This boilerplate is a fork of [joeynguyen/vite-react-express-boilerplate](https://github.com/joeynguyen/vite-react-express-boilerplate), but replaces React with Svelte. Its structure also has been renovated.
+This boilerplate is a fork of [joeynguyen/vite-react-express-boilerplate](https://github.com/joeynguyen/vite-react-express-boilerplate), but replaces React with Svelte. Its structure also has been renovated. The Svelte development folders are separated from the express-app folder. Your express-app structure is the same generated with the package express-generator.
 
 This boilerplate contains all the tools you need to build a modern web app with JavaScript, Svelte, Vite, and Express.  
 You can use it to quickly bootstrap your project.
@@ -54,11 +54,14 @@ To build the project, run:
 npm run build
 ```
 
-This will build the client and server.
+This will build the client and server. Once you have built the project, your "express-app" folder will contain all the Svelte compiled files (in the express-app/src folder).
 
 ```shell
 npm start
 ```
+
+This will run your express-app.
+You can consider the express-app folder as the actual web app that you will deploy. It contains your express application with all the compiled .svelte files.
 
 In production, you have a single server serving everything.
 
