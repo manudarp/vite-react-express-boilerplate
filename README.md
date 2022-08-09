@@ -71,4 +71,4 @@ A test runner is not installed (right now).
 
 ## Licensing
 
-MIT
+GNU GPLv3
