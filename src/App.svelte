@@ -1,9 +1,14 @@
 <script>
+  import 'bootstrap/dist/css/bootstrap.min.css';
+  import Navbar from './lib/Navbar.svelte';
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
 </script>
 
 <main>
+
+  <Navbar />
+
   <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/images/vite.svg" class="logo" alt="Vite Logo" />
